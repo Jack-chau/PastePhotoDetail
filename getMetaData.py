@@ -20,7 +20,4 @@ y = [x,img_datetime]
 y = sorted( y )
 print(y)
 
-
 img_taken_time = datetime.strftime ( img_datetime, '%d-%m-%Y' )
-
-# print ( img_taken_time )
