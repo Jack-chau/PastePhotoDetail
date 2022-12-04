@@ -8,10 +8,16 @@ path = "./Photo/"
 
 img_path = Path( path ).setPath ( )
 
+
+class TAG :
+    def __init__(self, open_image ) :
+        self.open_image = open_image
+    
+    def getImageDateTime ( self ) :
+
+
 for folders, images in img_path.items ( ) :
     for image in images :
-        print ( image )
-    break
-    
+        open_img = Image.open ( open_img )
 
 
