@@ -39,9 +39,6 @@ class Sorting ( Path ) :
             images_in_folder = os.listdir ( each_folder_path )
             image_path = [ self.path + folder + "/" + img for img in images_in_folder ]
             image_path_dict[ folder ] = image_path
-        
-        # for key,value in image_path_dict.items() :
-        #     print ( f"{key}:{value}")
 
         for folder, image in image_path_dict.items ( ) :
             img_dict = {}
@@ -64,8 +61,6 @@ class Sorting ( Path ) :
 
         for folders, img_time in img_time_dict.items():
             sort_by_time[folders] = { img: time for img, time in sorted( img_time.items( ), key = lambda time : time[1] ) }
-                
-path = "./Photo/"
-
-path = Sorting ( path ).sortByTime()
+        
+        return sort_by_time
 
